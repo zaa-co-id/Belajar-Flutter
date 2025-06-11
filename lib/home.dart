@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'page1.dart';
 import 'page2.dart';
 import 'form_registrasi.dart';
+import 'form_pemesanan.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -70,6 +71,18 @@ class Home extends StatelessWidget {
                     backgroundColor: Colors.orange,
                   ),
                   child: const Text('Registrasi'),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const FormPemesanan(),
+                      ),
+                    );
+                  },
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
+                  child: const Text('Pemesanan Tiket'),
                 ),
               ],
             ),

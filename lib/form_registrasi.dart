@@ -142,13 +142,12 @@ class _FormRegistrasiState extends State<FormRegistrasi> {
                     String email = _emailController.text;
                     String pesan =
                         '''
-Registrasi berhasil!
-Nama: $nama
-Email: $email
-Gender: $_gender
-Status: $_status
-''';
-
+                        Registrasi berhasil!
+                        Nama: $nama
+                        Email: $email
+                        Gender: $_gender
+                        Status: $_status
+                        ''';
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
                         content: Text(pesan),
